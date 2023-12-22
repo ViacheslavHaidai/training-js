@@ -92,13 +92,14 @@
 // в консоль рядок у форматі годин і хвилин, тобто, якщо користувач
 // вказав число 70, в консолі отримаємо "01:10"
 
-function formatMinutesToTime(minutes){
-    const hours = Math.floor(minutes / 60 )
-    const modHours = String(hours).padStart(2, '0')
-    const modMinutes = String(minutes % 60).padStart(2, '0')
+// function formatMinutesToTime(minutes){
+//     const hours = Math.floor(minutes / 60 )
+//     const modHours = String(hours).padStart(2, '0')
+//     const modMinutes = String(minutes % 60).padStart(2, '0')
 
     
-    return `${modHours} : ${modMinutes}`
-}
+//     return `${modHours} : ${modMinutes}`
+// }
 
-console.log(formatMinutesToTime(200))
+// console.log(formatMinutesToTime(200))
+
