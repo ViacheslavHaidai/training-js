@@ -103,3 +103,61 @@
 
 // console.log(formatMinutesToTime(200))
 
+// function getSlice(array, value) {
+//     const index = array.indexOf(value) + 1
+//     if(array.indexOf(value)) {
+//       return array.slice(0, index)
+//     } else {
+//       return [" "]
+//     }
+    
+//   }
+  
+//   console.log(getSlice(["Mango", "Poly", "Ajax"], "Mango"))
+//   console.log(getSlice(["Mango", "Poly", "Ajax"], "Jacob"))
+//   console.log(getSlice(["Mango", "Poly", "Ajax"], "Ajax"))
+
+
+
+
+const planets = ["Earth", "Mars", "Venus"];
+
+for (let i = 0; i < planets.length; i += 1) {
+  console.log(planets[i]);
+}
+
+// let array = [1, 2, 3, 4, 5];
+// let sum = 0;
+
+// for (let i = 0; i < array.length; i++) {
+//   sum += array[i];
+// }
+
+// console.log(sum); // Виведе 15
+
+// function calculate(number){
+//     let sum = 0;
+//     for (let i = 0; i <= number.length; i++) {
+//       sum += number[i];
+//     }
+//     return sum
+// }
+
+
+
+// console.log(calculate([1, 2, 3, 4, 5])); // Виведе 15
+
+function getEvenNumbers(start, end) {
+
+    for (let i = start; i <= end; i++){
+      if (i % 2 === 0){
+        return start[i]
+      } else {
+        return []
+      }
+    } 
+  }
+
+  console.log(getEvenNumbers(3, 15))
+
+  for(let)
