@@ -120,11 +120,11 @@
 
 
 
-const planets = ["Earth", "Mars", "Venus"];
+// const planets = ["Earth", "Mars", "Venus"];
 
-for (let i = 0; i < planets.length; i += 1) {
-  console.log(planets[i]);
-}
+// for (let i = 0; i < planets.length; i += 1) {
+//   console.log(planets[i]);
+// }
 
 // let array = [1, 2, 3, 4, 5];
 // let sum = 0;
@@ -147,17 +147,62 @@ for (let i = 0; i < planets.length; i += 1) {
 
 // console.log(calculate([1, 2, 3, 4, 5])); // Виведе 15
 
-function getEvenNumbers(start, end) {
+// function getEvenNumbers(start, end) {
 
-    for (let i = start; i <= end; i++){
-      if (i % 2 === 0){
-        return start[i]
-      } else {
-        return []
-      }
-    } 
+//     for (let i = start; i <= end; i++){
+//       if (i % 2 === 0){
+//         return start[i]
+//       } else {
+//         return []
+//       }
+//     } 
+//   }
+
+//   console.log(getEvenNumbers(3, 15))
+
+//   for(let)
+
+// function getProductPrice(productName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+//   for (const product of products ) {
+//     if (product.name === productName) {
+//       return product.price
+//     }
+    
+//   }
+  
+// }
+
+// console.log(getProductPrice("Radar"))  // 1300.
+// console.log(getProductPrice("Grip")) // 1200.
+// console.log(getProductPrice("Scanner")) // 2700.
+// console.log(getProductPrice("Droid")) // 400.
+// console.log(getProductPrice("Engine")) // null.
+
+
+function getAllPropValues(propName) {
+  const products = [
+    { name: "Radar", price: 1300, quantity: 4 },
+    { name: "Scanner", price: 2700, quantity: 3 },
+    { name: "Droid", price: 400, quantity: 7 },
+    { name: "Grip", price: 1200, quantity: 9 },
+  ];
+    let valuesArray = []
+  
+  for ( const product of products) {
+    if (propName === products.keys) {
+      valuesArray.push(product.keys.values)
+    }
+    return valuesArray
   }
+}
 
-  console.log(getEvenNumbers(3, 15))
-
-  for(let)
+console.log(getAllPropValues("name")) // ["Radar", "Scanner", "Droid", "Grip"]
+console.log(getAllPropValues("quantity")) // [4, 3, 7, 9]
+console.log(getAllPropValues("price")) // [1300, 2700, 400, 1200]
+console.log(getAllPropValues("category")) // []
