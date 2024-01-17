@@ -185,24 +185,55 @@
 // console.log(getProductPrice("Engine")) // null.
 
 
-function getAllPropValues(propName) {
-  const products = [
-    { name: "Radar", price: 1300, quantity: 4 },
-    { name: "Scanner", price: 2700, quantity: 3 },
-    { name: "Droid", price: 400, quantity: 7 },
-    { name: "Grip", price: 1200, quantity: 9 },
-  ];
-    let valuesArray = []
+// function getAllPropValues(propName) {
+//   const products = [
+//     { name: "Radar", price: 1300, quantity: 4 },
+//     { name: "Scanner", price: 2700, quantity: 3 },
+//     { name: "Droid", price: 400, quantity: 7 },
+//     { name: "Grip", price: 1200, quantity: 9 },
+//   ];
+//     let valuesArray = []
   
-  for ( const product of products) {
-    if (propName === products.keys) {
-      valuesArray.push(product.keys.values)
-    }
-    return valuesArray
-  }
-}
+//   for ( const product of products) {
+//     if (propName === products.keys) {
+//       valuesArray.push(product.keys.values)
+//     }
+//     return valuesArray
+//   }
+// }
 
-console.log(getAllPropValues("name")) // ["Radar", "Scanner", "Droid", "Grip"]
-console.log(getAllPropValues("quantity")) // [4, 3, 7, 9]
-console.log(getAllPropValues("price")) // [1300, 2700, 400, 1200]
-console.log(getAllPropValues("category")) // []
+// console.log(getAllPropValues("name")) // ["Radar", "Scanner", "Droid", "Grip"]
+// console.log(getAllPropValues("quantity")) // [4, 3, 7, 9]
+// console.log(getAllPropValues("price")) // [1300, 2700, 400, 1200]
+// console.log(getAllPropValues("category")) // []
+
+
+
+// function greet(name) {
+//   return `Welcome ${name}!`;
+// }
+
+// // Викликаємо функцію greet і виводимо результат у консоль
+// console.log(greet("Mango")); // "Welcome Mango!"
+
+// // Виводимо функцію greet у консоль, не викликаючи її
+// console.log(greet); // ƒ greet() {return `Welcome ${name}!`}
+
+
+
+function filterArray(numbers, value) {
+  let newArray = []
+    numbers.forEach(function (i) {
+      if (value < i) {
+         newArray.push(i)
+      }
+    })
+    return newArray
+  }
+  
+
+console.log(filterArray([12, 24, 8, 41, 76], 20)) // [24, 41, 76]
+console.log(filterArray([12, 24, 8, 41, 76], 38)) // [41, 76]
+console.log(filterArray([1, 2, 3, 4, 5], 4)) // [5]
+console.log(filterArray([1, 2, 3, 4, 5], 3)) // [4, 5]
+console.log(filterArray([1, 2, 3, 4, 5], 5)) // []
