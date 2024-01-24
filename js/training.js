@@ -221,19 +221,59 @@
 
 
 
-function filterArray(numbers, value) {
-  let newArray = []
-    numbers.forEach(function (i) {
-      if (value < i) {
-         newArray.push(i)
-      }
-    })
-    return newArray
-  }
+// function filterArray(numbers, value) {
+//   let newArray = []
+//     numbers.forEach(function (i) {
+//       if (value < i) {
+//          newArray.push(i)
+//       }
+//     })
+//     return newArray
+//   }
   
 
-console.log(filterArray([12, 24, 8, 41, 76], 20)) // [24, 41, 76]
-console.log(filterArray([12, 24, 8, 41, 76], 38)) // [41, 76]
-console.log(filterArray([1, 2, 3, 4, 5], 4)) // [5]
-console.log(filterArray([1, 2, 3, 4, 5], 3)) // [4, 5]
-console.log(filterArray([1, 2, 3, 4, 5], 5)) // []
+// console.log(filterArray([12, 24, 8, 41, 76], 20)) // [24, 41, 76]
+// console.log(filterArray([12, 24, 8, 41, 76], 38)) // [41, 76]
+// console.log(filterArray([1, 2, 3, 4, 5], 4)) // [5]
+// console.log(filterArray([1, 2, 3, 4, 5], 3)) // [4, 5]
+// console.log(filterArray([1, 2, 3, 4, 5], 5)) // []
+
+
+// class User {
+//   constructor({ name, email }) {
+//     this.name = name;
+//     this.email = email;
+//   }
+
+//   getEmail() {
+//     return this.email;
+//   }
+
+//   changeEmail(newEmail) {
+//     this.email = newEmail;
+//   }
+// }
+
+// const mango = new User({ 
+// 	name: "Mango", 
+// 	email: "mango@mail.com" 
+// });
+
+// console.log(mango.getEmail());  // “mango@mail.com”
+
+class User {
+  constructor({ name, email }) {
+    this.name = name;
+    this.email = email;
+  }
+
+  getEmail() {
+    return this.email;
+  }
+
+  changeEmail(newEmail) {
+    this.email = newEmail;
+  }
+}
+
+console.log(User.prototype); // {constructor: ƒ, getEmail: ƒ, changeEmail: ƒ}
