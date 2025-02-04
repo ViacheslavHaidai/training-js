@@ -157,21 +157,21 @@
 * виводить вміст об'єкта user у форматі ключ: значення використовуючи Object.keys() і for...of
  */
 
-const user = {
-  name: "John",
-  age: 21,
-  hobby: "css",
-  premium: true,
-};
+// const user = {
+//   name: "John",
+//   age: 21,
+//   hobby: "css",
+//   premium: true,
+// };
 
-user.mood = "happy";
-console.log(user);
-user.hobby = "skydiving";
-console.log(user);
-user.premium = false;
-console.log(user);
-const keys = Object.values(user);
-console.log(keys);
-for (const key of keys) {
-  console.log(`${key} ${user[key]}`);
-}
+// user.mood = "happy";
+// console.log(user);
+// user.hobby = "skydiving";
+// console.log(user);
+// user.premium = false;
+// console.log(user);
+// const keys = Object.values(user);
+// console.log(keys);
+// for (const key of keys) {
+//   console.log(`${key} ${user[key]}`);
+// }
