@@ -1,3 +1,5 @@
-let user = 22;
-let name = 4;
-console.log(user % name);
+// function multiply(a, b, c) {
+//   console.log(a * b * c);
+// }
+
+// multiply(1, 2, 3);
